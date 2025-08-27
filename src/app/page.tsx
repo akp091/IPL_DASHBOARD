@@ -5,254 +5,26 @@ import PointsTable from "@/components/PointsTable";
 import MatchSchedule from "@/components/MatchSchedule";
 import StatsCard from "@/components/StatsCard";
 
-// Static data for the design template
-const staticData = {
-  totalMatches: 74,
-  completedMatches: 45,
-  upcomingMatchesCount: 28,
-  liveMatchesCount: 1,
-  lastUpdated: "2024-08-25T18:42:16.576Z",
+async function getAllMatches() {
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_BASE_URL}/api/get-all-matches`
+    );
 
-  liveMatch: {
-    id: "match_1",
-    team1: { id: "csk", name: "Chennai Super Kings", shortName: "CSK" },
-    team2: { id: "mi", name: "Mumbai Indians", shortName: "MI" },
-    date: "Aug 25",
-    time: "7:30 PM",
-    venue: "Wankhede Stadium, Mumbai",
-    status: "live" as const,
-    isLive: true,
-    score1: "156/4",
-    score2: "142/8",
-  },
+    if (!res.ok) {
+      console.log("Failed to fetch matches");
+    }
 
-  upcomingMatches: [
-    {
-      id: "match_2",
-      team1: {
-        id: "rcb",
-        name: "Royal Challengers Bangalore",
-        shortName: "RCB",
-      },
-      team2: { id: "kkr", name: "Kolkata Knight Riders", shortName: "KKR" },
-      date: "Aug 26",
-      time: "7:30 PM",
-      venue: "Chinnaswamy Stadium, Bangalore",
-      status: "upcoming" as const,
-    },
-    {
-      id: "match_3",
-      team1: { id: "dc", name: "Delhi Capitals", shortName: "DC" },
-      team2: { id: "pbks", name: "Punjab Kings", shortName: "PBKS" },
-      date: "Aug 27",
-      time: "7:30 PM",
-      venue: "Arun Jaitley Stadium, Delhi",
-      status: "upcoming" as const,
-    },
-    {
-      id: "match_4",
-      team1: { id: "rr", name: "Rajasthan Royals", shortName: "RR" },
-      team2: { id: "srh", name: "Sunrisers Hyderabad", shortName: "SRH" },
-      date: "Aug 28",
-      time: "7:30 PM",
-      venue: "Sawai Mansingh Stadium, Jaipur",
-      status: "upcoming" as const,
-    },
-  ],
+    const data = await res.json();
+    return data.data;
+  } catch (error) {
+    console.log("error in fetching match data :>> ", error);
+  }
+}
 
-  pointsTable: [
-    {
-      team: { id: "csk", name: "Chennai Super Kings", shortName: "CSK" },
-      played: 14,
-      won: 11,
-      lost: 3,
-      tied: 0,
-      points: 22,
-      netRunRate: 0.652,
-      position: 1,
-    },
-    {
-      team: { id: "mi", name: "Mumbai Indians", shortName: "MI" },
-      played: 14,
-      won: 10,
-      lost: 4,
-      tied: 0,
-      points: 20,
-      netRunRate: 0.523,
-      position: 2,
-    },
-    {
-      team: {
-        id: "rcb",
-        name: "Royal Challengers Bangalore",
-        shortName: "RCB",
-      },
-      played: 14,
-      won: 9,
-      lost: 5,
-      tied: 0,
-      points: 18,
-      netRunRate: 0.387,
-      position: 3,
-    },
-    {
-      team: { id: "kkr", name: "Kolkata Knight Riders", shortName: "KKR" },
-      played: 14,
-      won: 8,
-      lost: 6,
-      tied: 0,
-      points: 16,
-      netRunRate: 0.234,
-      position: 4,
-    },
-    {
-      team: { id: "dc", name: "Delhi Capitals", shortName: "DC" },
-      played: 14,
-      won: 7,
-      lost: 7,
-      tied: 0,
-      points: 14,
-      netRunRate: -0.123,
-      position: 5,
-    },
-    {
-      team: { id: "pbks", name: "Punjab Kings", shortName: "PBKS" },
-      played: 14,
-      won: 6,
-      lost: 8,
-      tied: 0,
-      points: 12,
-      netRunRate: -0.234,
-      position: 6,
-    },
-    {
-      team: { id: "rr", name: "Rajasthan Royals", shortName: "RR" },
-      played: 14,
-      won: 5,
-      lost: 9,
-      tied: 0,
-      points: 10,
-      netRunRate: -0.345,
-      position: 7,
-    },
-    {
-      team: { id: "srh", name: "Sunrisers Hyderabad", shortName: "SRH" },
-      played: 14,
-      won: 4,
-      lost: 10,
-      tied: 0,
-      points: 8,
-      netRunRate: -0.456,
-      position: 8,
-    },
-    {
-      team: { id: "gt", name: "Gujarat Titans", shortName: "GT" },
-      played: 14,
-      won: 3,
-      lost: 11,
-      tied: 0,
-      points: 6,
-      netRunRate: -0.567,
-      position: 9,
-    },
-    {
-      team: { id: "lsg", name: "Lucknow Super Giants", shortName: "LSG" },
-      played: 14,
-      won: 2,
-      lost: 12,
-      tied: 0,
-      points: 4,
-      netRunRate: -0.678,
-      position: 10,
-    },
-  ],
-
-  schedule: [
-    {
-      id: "match_1",
-      team1: { id: "csk", name: "Chennai Super Kings", shortName: "CSK" },
-      team2: { id: "mi", name: "Mumbai Indians", shortName: "MI" },
-      date: "Aug 25",
-      time: "7:30 PM",
-      venue: "Wankhede Stadium, Mumbai",
-      status: "live" as const,
-      isLive: true,
-      score1: "156/4",
-      score2: "142/8",
-      result: "CSK won by 14 runs",
-    },
-    {
-      id: "match_2",
-      team1: {
-        id: "rcb",
-        name: "Royal Challengers Bangalore",
-        shortName: "RCB",
-      },
-      team2: { id: "kkr", name: "Kolkata Knight Riders", shortName: "KKR" },
-      date: "Aug 26",
-      time: "7:30 PM",
-      venue: "Chinnaswamy Stadium, Bangalore",
-      status: "upcoming" as const,
-    },
-    {
-      id: "match_3",
-      team1: { id: "dc", name: "Delhi Capitals", shortName: "DC" },
-      team2: { id: "pbks", name: "Punjab Kings", shortName: "PBKS" },
-      date: "Aug 27",
-      time: "7:30 PM",
-      venue: "Arun Jaitley Stadium, Delhi",
-      status: "upcoming" as const,
-    },
-    {
-      id: "match_4",
-      team1: { id: "rr", name: "Rajasthan Royals", shortName: "RR" },
-      team2: { id: "srh", name: "Sunrisers Hyderabad", shortName: "SRH" },
-      date: "Aug 28",
-      time: "7:30 PM",
-      venue: "Sawai Mansingh Stadium, Jaipur",
-      status: "upcoming" as const,
-    },
-    {
-      id: "match_5",
-      team1: { id: "gt", name: "Gujarat Titans", shortName: "GT" },
-      team2: { id: "lsg", name: "Lucknow Super Giants", shortName: "LSG" },
-      date: "Aug 29",
-      time: "7:30 PM",
-      venue: "Narendra Modi Stadium, Ahmedabad",
-      status: "upcoming" as const,
-    },
-    {
-      id: "match_6",
-      team1: { id: "csk", name: "Chennai Super Kings", shortName: "CSK" },
-      team2: {
-        id: "rcb",
-        name: "Royal Challengers Bangalore",
-        shortName: "RCB",
-      },
-      date: "Aug 24",
-      time: "7:30 PM",
-      venue: "MA Chidambaram Stadium, Chennai",
-      status: "completed" as const,
-      result: "CSK won by 6 wickets",
-      score1: "173/6",
-      score2: "172/8",
-    },
-    {
-      id: "match_7",
-      team1: { id: "mi", name: "Mumbai Indians", shortName: "MI" },
-      team2: { id: "dc", name: "Delhi Capitals", shortName: "DC" },
-      date: "Aug 23",
-      time: "7:30 PM",
-      venue: "Wankhede Stadium, Mumbai",
-      status: "completed" as const,
-      result: "MI won by 8 wickets",
-      score1: "165/2",
-      score2: "164/8",
-    },
-  ],
-};
-
-export default function Home() {
+export default async function Home() {
+  const matches = await getAllMatches();
+  console.log("allMatches===>>>", matches);
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
@@ -265,7 +37,7 @@ export default function Home() {
               Dashboard Overview
             </h1>
             <p className="text-sm text-gray-600 mt-1">
-              Last updated: {new Date(staticData.lastUpdated).toLocaleString()}
+              Last updated: {new Date(matches?.lastUpdated).toLocaleString()}
             </p>
           </div>
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors flex items-center space-x-2">
@@ -285,53 +57,49 @@ export default function Home() {
             <span>Refresh</span>
           </button>
         </div>
-
         {/* Statistics Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           <StatsCard
             title="Total Matches"
-            value={staticData.totalMatches}
-            icon="🏏"
+            value={
+              [...matches?.live, ...matches.upcoming, ...matches.completed]
+                .length
+            }
             color="blue"
             subtitle="Season 2024"
           />
           <StatsCard
             title="Completed"
-            value={staticData.completedMatches}
-            icon="✅"
+            value={matches?.completed?.length}
             color="green"
             subtitle="Finished matches"
           />
           <StatsCard
             title="Upcoming"
-            value={staticData.upcomingMatchesCount}
-            icon="⏰"
+            value={matches?.upcoming?.length}
             color="yellow"
             subtitle="Scheduled matches"
           />
           <StatsCard
             title="Live Now"
-            value={staticData.liveMatchesCount}
-            icon="🔴"
+            value={matches?.live?.length}
             color="red"
             subtitle="Currently playing"
           />
         </div>
-
         {/* Live Match / Upcoming Match */}
         <LiveMatch
-          liveMatch={staticData.liveMatch}
-          upcomingMatches={staticData.upcomingMatches}
+          liveMatches={matches?.live}
+          upcomingMatches={matches?.upcoming}
         />
-
         {/* Upcoming Matches */}
-        <UpcomingMatches upcomingMatches={staticData.upcomingMatches} />
-
+        {matches?.upcoming && (
+          <UpcomingMatches upcomingMatches={matches?.upcoming} />
+        )}
         {/* Points Table */}
-        <PointsTable pointsTable={staticData.pointsTable} />
-
-        {/* Match Schedule */}
-        <MatchSchedule schedule={staticData.schedule} />
+        <PointsTable />
+        {/* component for match schedule */}
+        <MatchSchedule />
       </div>
     </div>
   );

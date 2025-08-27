@@ -1,7 +1,6 @@
 interface StatsCardProps {
   title: string;
   value: string | number;
-  icon: string;
   color: "blue" | "green" | "red" | "yellow" | "purple";
   subtitle?: string;
 }
@@ -9,7 +8,6 @@ interface StatsCardProps {
 export default function StatsCard({
   title,
   value,
-  icon,
   color,
   subtitle,
 }: StatsCardProps) {
@@ -31,9 +29,7 @@ export default function StatsCard({
         </div>
         <div
           className={`w-12 h-12 rounded-full flex items-center justify-center ${colorClasses[color]}`}
-        >
-          <span className="text-xl">{icon}</span>
-        </div>
+        ></div>
       </div>
     </div>
   );

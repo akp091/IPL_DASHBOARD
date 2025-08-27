@@ -9,7 +9,7 @@ async function fetchPointsTableData() {
   );
 
   if (!res.ok) {
-    throw new Error("Failed to fetch matches");
+    console.log("Failed to fetch matches");
   }
 
   const data = await res.json();
@@ -32,7 +32,7 @@ const fields = [
   "RECENT FORM",
 ];
 
-export default async function PointsTable({ pointsTable }: PointsTableProps) {
+export default async function PointsTable() {
   const matches = await fetchPointsTableData();
   console.log("matches :>> ", matches);
   return (
@@ -47,7 +47,10 @@ export default async function PointsTable({ pointsTable }: PointsTableProps) {
           <thead>
             <tr className="bg-gray-50 border-b-2 border-gray-200">
               {fields.map((field) => (
-                <th className="text-left py-3 px-4 font-semibold text-gray-700">
+                <th
+                  key={field}
+                  className="text-left py-3 px-4 font-semibold text-gray-700"
+                >
                   {field}
                 </th>
               ))}
@@ -56,7 +59,7 @@ export default async function PointsTable({ pointsTable }: PointsTableProps) {
           <tbody>
             {matches.map((item, index) => (
               <tr
-                key={item.pos}
+                key={item.POS}
                 className={`border-b border-gray-100 hover:bg-gray-50 transition-colors ${
                   index < 4 ? "bg-green-50" : ""
                 }`}
@@ -110,8 +113,9 @@ export default async function PointsTable({ pointsTable }: PointsTableProps) {
                   {item.PTS}
                 </td>
                 <td className="py-3 px-4 text-center font-bold text-blue-600">
-                  {item["RECENT FORM"].map((data) => (
+                  {item["RECENT FORM"].map((data, index) => (
                     <span
+                      key={index}
                       className={`px-2 w-8 h-8 bg-gray-200 ${
                         data.toLowerCase() == "w"
                           ? "text-green-600"

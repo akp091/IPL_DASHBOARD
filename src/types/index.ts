@@ -1,14 +1,12 @@
 export interface Team {
-  id: string;
   name: string;
-  shortName: string;
+  score: string;
   logo?: string;
 }
 
 export interface Match {
   id: string;
-  team1: Team;
-  team2: Team;
+  teams: Team[];
   date: string;
   time: string;
   venue: string;

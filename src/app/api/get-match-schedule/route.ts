@@ -11,50 +11,12 @@ export async function GET(req: NextRequest) {
   try {
     // Get matches from JSON File
     const matches = await getMatchesData();
-    let result: any;
-    if (!status) {
-      return NextResponse.json({
-        success: true,
-        data: matches.data,
-        lastUpdated: matches.lastUpdated,
-      });
-    }
 
-    switch (status?.toLowerCase()) {
-      case "upcoming": {
-        result = matches.data.filter(
-          (match) => !match.result && !compareDateTime(match.time)
-        );
-        break;
-      }
-      case "live": {
-        result = matches.data.filter(
-          (match) => !match.result && compareDateTime(match.time)
-        );
-        break;
-      }
-
-      case "completed": {
-        result = matches.data.filter((match) => !!match.result);
-        break;
-      }
-
-      default: {
-        return NextResponse.json(
-          {
-            success: false,
-            error: "API Route doesnot exist",
-            message: "API Route doesnot exist ",
-          },
-          { status: 404 }
-        );
-      }
-    }
     // success response
     return NextResponse.json({
       success: true,
-      data: result,
-      lastUpdated: matches.lastUpdated,
+      data: matches?.data,
+      lastUpdated: matches?.lastUpdated,
     });
   } catch (error) {
     console.error("Error reading matches:", error);
