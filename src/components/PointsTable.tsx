@@ -1,6 +1,6 @@
 import { PointsTableEntry } from "@/types";
 
-async function fetchMatches() {
+async function fetchPointsTableData() {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_URL}/api/points-table`,
     {
@@ -33,7 +33,7 @@ const fields = [
 ];
 
 export default async function PointsTable({ pointsTable }: PointsTableProps) {
-  const matches = await fetchMatches();
+  const matches = await fetchPointsTableData();
   console.log("matches :>> ", matches);
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
