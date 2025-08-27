@@ -1,4 +1,4 @@
-import { newPage } from "../puppeteerClient.js";
+import { newPage } from "../puppeteerClient";
 
 export async function getMatchesData() {
   const page = await newPage();

@@ -1,0 +1,1338 @@
+{
+  "data": [
+    {
+      "matchType": "Final",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "time": "JUN, TUE 3 , 7:30 pm IST",
+      "result": "Royal Challengers Bengaluru Won by 6  Runs (Winners)",
+      "teams": [
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "190/9",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Punjab Kings",
+          "score": "184/7",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Qualifier 2",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "time": "JUN, SUN 1 , 7:30 pm IST",
+      "result": "Punjab Kings Won by 5  Wickets (Qualified)",
+      "teams": [
+        {
+          "name": "Punjab Kings",
+          "score": "207/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Mumbai Indians",
+          "score": "203/6",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Eliminator",
+      "venue": "New PCA Stadium, Chandigarh",
+      "time": "MAY, FRI 30 , 7:30 pm IST",
+      "result": "Mumbai Indians Won by 20  Runs (Qualified)",
+      "teams": [
+        {
+          "name": "Gujarat Titans",
+          "score": "208/6",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        },
+        {
+          "name": "Mumbai Indians",
+          "score": "228/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Qualifier 1",
+      "venue": "New PCA Stadium, Chandigarh",
+      "time": "MAY, THU 29 , 7:30 pm IST",
+      "result": "Royal Challengers Bengaluru Won by 8  Wickets (Qualified)",
+      "teams": [
+        {
+          "name": "Punjab Kings",
+          "score": "101",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "106/2",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 70",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "time": "MAY, TUE 27 , 7:30 pm IST",
+      "result": "Royal Challengers Bengaluru Won by 6  Wickets",
+      "teams": [
+        {
+          "name": "Lucknow Super Giants",
+          "score": "227/3",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        },
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "230/4",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 69",
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "time": "MAY, MON 26 , 7:30 pm IST",
+      "result": "Punjab Kings Won by 7  Wickets",
+      "teams": [
+        {
+          "name": "Punjab Kings",
+          "score": "187/3",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Mumbai Indians",
+          "score": "184/7",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 68",
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "time": "MAY, SUN 25 , 7:30 pm IST",
+      "result": "Sunrisers Hyderabad Won by 110  Runs",
+      "teams": [
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "278/3",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "168",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 67",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "time": "MAY, SUN 25 , 3:30 pm IST",
+      "result": "Chennai Super Kings Won by 83  Runs",
+      "teams": [
+        {
+          "name": "Gujarat Titans",
+          "score": "147",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        },
+        {
+          "name": "Chennai Super Kings",
+          "score": "230/5",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 66",
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "time": "MAY, SAT 24 , 7:30 pm IST",
+      "result": "Delhi Capitals Won by 6  Wickets",
+      "teams": [
+        {
+          "name": "Punjab Kings",
+          "score": "206/8",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Delhi Capitals",
+          "score": "208/4",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 65",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "time": "MAY, FRI 23 , 7:30 pm IST",
+      "result": "Sunrisers Hyderabad Won by 42  Runs",
+      "teams": [
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "189",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "231/6",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 64",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "time": "MAY, THU 22 , 7:30 pm IST",
+      "result": "Lucknow Super Giants Won by 33  Runs",
+      "teams": [
+        {
+          "name": "Gujarat Titans",
+          "score": "202/9",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        },
+        {
+          "name": "Lucknow Super Giants",
+          "score": "235/2",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 63",
+      "venue": "Wankhede Stadium, Mumbai",
+      "time": "MAY, WED 21 , 7:30 pm IST",
+      "result": "Mumbai Indians Won by 59  Runs",
+      "teams": [
+        {
+          "name": "Mumbai Indians",
+          "score": "180/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Delhi Capitals",
+          "score": "121",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 62",
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "time": "MAY, TUE 20 , 7:30 pm IST",
+      "result": "Rajasthan Royals Won by 6  Wickets",
+      "teams": [
+        {
+          "name": "Chennai Super Kings",
+          "score": "187/8",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        },
+        {
+          "name": "Rajasthan Royals",
+          "score": "188/4",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 61",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "time": "MAY, MON 19 , 7:30 pm IST",
+      "result": "Sunrisers Hyderabad Won by 6  Wickets",
+      "teams": [
+        {
+          "name": "Lucknow Super Giants",
+          "score": "205/7",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        },
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "206/4",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 60",
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "time": "MAY, SUN 18 , 7:30 pm IST",
+      "result": "Gujarat Titans Won by 10  Wickets",
+      "teams": [
+        {
+          "name": "Delhi Capitals",
+          "score": "199/3",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        },
+        {
+          "name": "Gujarat Titans",
+          "score": "205/0",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 59",
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "time": "MAY, SUN 18 , 3:30 pm IST",
+      "result": "Punjab Kings Won by 10  Runs",
+      "teams": [
+        {
+          "name": "Rajasthan Royals",
+          "score": "209/7",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Punjab Kings",
+          "score": "219/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 58",
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "time": "MAY, SAT 17 , 7:30 pm IST",
+      "result": "Match Abandoned",
+      "teams": [
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 57",
+      "venue": "Eden Gardens, Kolkata",
+      "time": "MAY, WED 7 , 7:30 pm IST",
+      "result": "Chennai Super Kings Won by 2  Wickets",
+      "teams": [
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "179/6",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        },
+        {
+          "name": "Chennai Super Kings",
+          "score": "183/8",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 56",
+      "venue": "Wankhede Stadium, Mumbai",
+      "time": "MAY, TUE 6 , 7:30 pm IST",
+      "result": "Gujarat Titans Won by 3  Wickets  (D/L Method)",
+      "teams": [
+        {
+          "name": "Mumbai Indians",
+          "score": "155/8",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Gujarat Titans",
+          "score": "147/7",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 55",
+      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "time": "MAY, MON 5 , 7:30 pm IST",
+      "result": "No Result",
+      "teams": [
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "133/7",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Delhi Capitals",
+          "score": "133/7",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 54",
+      "venue": "Himachal Pradesh Cricket Association Stadium, Dharamshala",
+      "time": "MAY, SUN 4 , 7:30 pm IST",
+      "result": "Punjab Kings Won by 37  Runs",
+      "teams": [
+        {
+          "name": "Punjab Kings",
+          "score": "236/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Lucknow Super Giants",
+          "score": "199/7",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 53",
+      "venue": "Eden Gardens, Kolkata",
+      "time": "MAY, SUN 4 , 3:30 pm IST",
+      "result": "Kolkata Knight Riders Won by 1  Run",
+      "teams": [
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "206/4",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        },
+        {
+          "name": "Rajasthan Royals",
+          "score": "205/8",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 52",
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "time": "MAY, SAT 3 , 7:30 pm IST",
+      "result": "Royal Challengers Bengaluru Won by 2  Runs",
+      "teams": [
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "213/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Chennai Super Kings",
+          "score": "211/5",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 51",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "time": "MAY, FRI 2 , 7:30 pm IST",
+      "result": "Gujarat Titans Won by 38  Runs",
+      "teams": [
+        {
+          "name": "Gujarat Titans",
+          "score": "224/6",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        },
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "186/6",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 50",
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "time": "MAY, THU 1 , 7:30 pm IST",
+      "result": "Mumbai Indians Won by 100  Runs",
+      "teams": [
+        {
+          "name": "Rajasthan Royals",
+          "score": "117",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Mumbai Indians",
+          "score": "217/2",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 49",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "time": "APR, WED 30 , 7:30 pm IST",
+      "result": "Punjab Kings Won by 4  Wickets",
+      "teams": [
+        {
+          "name": "Chennai Super Kings",
+          "score": "190",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        },
+        {
+          "name": "Punjab Kings",
+          "score": "194/6",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 48",
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "time": "APR, TUE 29 , 7:30 pm IST",
+      "result": "Kolkata Knight Riders Won by 14  Runs",
+      "teams": [
+        {
+          "name": "Delhi Capitals",
+          "score": "190/9",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        },
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "204/9",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 47",
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "time": "APR, MON 28 , 7:30 pm IST",
+      "result": "Rajasthan Royals Won by 8   Wickets",
+      "teams": [
+        {
+          "name": "Rajasthan Royals",
+          "score": "212/2",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Gujarat Titans",
+          "score": "209/4",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 46",
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "time": "APR, SUN 27 , 7:30 pm IST",
+      "result": "Royal Challengers Bengaluru Won by 6  Wickets",
+      "teams": [
+        {
+          "name": "Delhi Capitals",
+          "score": "162/8",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        },
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "165/4",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 45",
+      "venue": "Wankhede Stadium, Mumbai",
+      "time": "APR, SUN 27 , 3:30 pm IST",
+      "result": "Mumbai Indians Won by 54  Runs",
+      "teams": [
+        {
+          "name": "Mumbai Indians",
+          "score": "215/7",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Lucknow Super Giants",
+          "score": "161",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 44",
+      "venue": "Eden Gardens, Kolkata",
+      "time": "APR, SAT 26 , 7:30 pm IST",
+      "result": "No Result",
+      "teams": [
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "7/0",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        },
+        {
+          "name": "Punjab Kings",
+          "score": "201/4",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 43",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "time": "APR, FRI 25 , 7:30 pm IST",
+      "result": "Sunrisers Hyderabad Won by 5  Wickets",
+      "teams": [
+        {
+          "name": "Chennai Super Kings",
+          "score": "154",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        },
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "155/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 42",
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "time": "APR, THU 24 , 7:30 pm IST",
+      "result": "Royal Challengers Bengaluru Won by 11  Runs",
+      "teams": [
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "205/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Rajasthan Royals",
+          "score": "194/9",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 41",
+      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "time": "APR, WED 23 , 7:30 pm IST",
+      "result": "Mumbai Indians Won by 7  Wickets",
+      "teams": [
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "143/8",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Mumbai Indians",
+          "score": "146/3",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 40",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "time": "APR, TUE 22 , 7:30 pm IST",
+      "result": "Delhi Capitals Won by 8  Wickets",
+      "teams": [
+        {
+          "name": "Lucknow Super Giants",
+          "score": "159/6",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        },
+        {
+          "name": "Delhi Capitals",
+          "score": "161/2",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 39",
+      "venue": "Eden Gardens, Kolkata",
+      "time": "APR, MON 21 , 7:30 pm IST",
+      "result": "Gujarat Titans Won by 39  Runs",
+      "teams": [
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "159/8",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        },
+        {
+          "name": "Gujarat Titans",
+          "score": "198/3",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 38",
+      "venue": "Wankhede Stadium, Mumbai",
+      "time": "APR, SUN 20 , 7:30 pm IST",
+      "result": "Mumbai Indians Won by 9  Wickets",
+      "teams": [
+        {
+          "name": "Mumbai Indians",
+          "score": "177/1",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Chennai Super Kings",
+          "score": "176/5",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 37",
+      "venue": "New PCA Stadium, Chandigarh",
+      "time": "APR, SUN 20 , 3:30 pm IST",
+      "result": "Royal Challengers Bengaluru Won by 7  Wickets",
+      "teams": [
+        {
+          "name": "Punjab Kings",
+          "score": "157/6",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "159/3",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 36",
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "time": "APR, SAT 19 , 7:30 pm IST",
+      "result": "Lucknow Super Giants Won by 2  Runs",
+      "teams": [
+        {
+          "name": "Rajasthan Royals",
+          "score": "178/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Lucknow Super Giants",
+          "score": "180/5",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 35",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "time": "APR, SAT 19 , 3:30 pm IST",
+      "result": "Gujarat Titans Won by 7  Wickets",
+      "teams": [
+        {
+          "name": "Gujarat Titans",
+          "score": "204/3",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        },
+        {
+          "name": "Delhi Capitals",
+          "score": "203/8",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 34",
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "time": "APR, FRI 18 , 7:30 pm IST",
+      "result": "Punjab Kings Won by 5  Wickets",
+      "teams": [
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "95/9",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Punjab Kings",
+          "score": "98/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 33",
+      "venue": "Wankhede Stadium, Mumbai",
+      "time": "APR, THU 17 , 7:30 pm IST",
+      "result": "Mumbai Indians Won by 4  Wickets",
+      "teams": [
+        {
+          "name": "Mumbai Indians",
+          "score": "166/6",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "162/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 32",
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "time": "APR, WED 16 , 7:30 pm IST",
+      "result": "Delhi Capitals Won by Super Over",
+      "teams": [
+        {
+          "name": "Delhi Capitals",
+          "score": "188/5",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        },
+        {
+          "name": "Rajasthan Royals",
+          "score": "188/4",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 31",
+      "venue": "New PCA Stadium, Chandigarh",
+      "time": "APR, TUE 15 , 7:30 pm IST",
+      "result": "Punjab Kings Won by 16  Runs",
+      "teams": [
+        {
+          "name": "Punjab Kings",
+          "score": "111",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "95",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 30",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "time": "APR, MON 14 , 7:30 pm IST",
+      "result": "Chennai Super Kings Won by 5  Wickets",
+      "teams": [
+        {
+          "name": "Lucknow Super Giants",
+          "score": "166/7",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        },
+        {
+          "name": "Chennai Super Kings",
+          "score": "168/5",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 29",
+      "venue": "Arun Jaitley Stadium, Delhi",
+      "time": "APR, SUN 13 , 7:30 pm IST",
+      "result": "Mumbai Indians Won by 12  Runs",
+      "teams": [
+        {
+          "name": "Delhi Capitals",
+          "score": "193",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        },
+        {
+          "name": "Mumbai Indians",
+          "score": "205/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 28",
+      "venue": "Sawai Mansingh Stadium, Jaipur",
+      "time": "APR, SUN 13 , 3:30 pm IST",
+      "result": "Royal Challengers Bengaluru Won by 9  Wickets",
+      "teams": [
+        {
+          "name": "Rajasthan Royals",
+          "score": "173/4",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "175/1",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 27",
+      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "time": "APR, SAT 12 , 7:30 pm IST",
+      "result": "Sunrisers Hyderabad Won by 8  Wickets",
+      "teams": [
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "247/2",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Punjab Kings",
+          "score": "245/6",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 26",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "time": "APR, SAT 12 , 3:30 pm IST",
+      "result": "Lucknow Super Giants Won by 6  Wickets",
+      "teams": [
+        {
+          "name": "Lucknow Super Giants",
+          "score": "186/4",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        },
+        {
+          "name": "Gujarat Titans",
+          "score": "180/6",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 25",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "time": "APR, FRI 11 , 7:30 pm IST",
+      "result": "Kolkata Knight Riders Won by 8  Wickets",
+      "teams": [
+        {
+          "name": "Chennai Super Kings",
+          "score": "103/9",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        },
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "107/2",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 24",
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "time": "APR, THU 10 , 7:30 pm IST",
+      "result": "Delhi Capitals Won by 6  Wickets",
+      "teams": [
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "163/7",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Delhi Capitals",
+          "score": "169/4",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 23",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "time": "APR, WED 9 , 7:30 pm IST",
+      "result": "Gujarat Titans Won by 58  Runs",
+      "teams": [
+        {
+          "name": "Gujarat Titans",
+          "score": "217/6",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        },
+        {
+          "name": "Rajasthan Royals",
+          "score": "159",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 22",
+      "venue": "New PCA Stadium, Chandigarh",
+      "time": "APR, TUE 8 , 7:30 pm IST",
+      "result": "Punjab Kings Won by 18  Runs",
+      "teams": [
+        {
+          "name": "Punjab Kings",
+          "score": "219/6",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Chennai Super Kings",
+          "score": "201/5",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 19",
+      "venue": "Eden Gardens, Kolkata",
+      "time": "APR, TUE 8 , 3:30 pm IST",
+      "result": "Lucknow Super Giants Won by 4  Runs",
+      "teams": [
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "234/7",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        },
+        {
+          "name": "Lucknow Super Giants",
+          "score": "238/3",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 21",
+      "venue": "Wankhede Stadium, Mumbai",
+      "time": "APR, MON 7 , 7:30 pm IST",
+      "result": "Royal Challengers Bengaluru Won by 12  Runs",
+      "teams": [
+        {
+          "name": "Mumbai Indians",
+          "score": "209/9",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "221/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 20",
+      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "time": "APR, SUN 6 , 7:30 pm IST",
+      "result": "Gujarat Titans Won by 7  Wickets",
+      "teams": [
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "152/8",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Gujarat Titans",
+          "score": "153/3",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 18",
+      "venue": "New PCA Stadium, Chandigarh",
+      "time": "APR, SAT 5 , 7:30 pm IST",
+      "result": "Rajasthan Royals Won by 50  Runs",
+      "teams": [
+        {
+          "name": "Punjab Kings",
+          "score": "155/9",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Rajasthan Royals",
+          "score": "205/4",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 17",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "time": "APR, SAT 5 , 3:30 pm IST",
+      "result": "Delhi Capitals Won by 25  Runs",
+      "teams": [
+        {
+          "name": "Chennai Super Kings",
+          "score": "158/5",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        },
+        {
+          "name": "Delhi Capitals",
+          "score": "183/6",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 16",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "time": "APR, FRI 4 , 7:30 pm IST",
+      "result": "Lucknow Super Giants Won by 12  Runs",
+      "teams": [
+        {
+          "name": "Lucknow Super Giants",
+          "score": "203/8",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        },
+        {
+          "name": "Mumbai Indians",
+          "score": "191/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 15",
+      "venue": "Eden Gardens, Kolkata",
+      "time": "APR, THU 3 , 7:30 pm IST",
+      "result": "Kolkata Knight Riders Won by 80  Runs",
+      "teams": [
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "200/6",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        },
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "120",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 14",
+      "venue": "M Chinnaswamy Stadium, Bengaluru",
+      "time": "APR, WED 2 , 7:30 pm IST",
+      "result": "Gujarat Titans Won by 8  Wickets",
+      "teams": [
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "169/8",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Gujarat Titans",
+          "score": "170/2",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 13",
+      "venue": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium, Lucknow",
+      "time": "APR, TUE 1 , 7:30 pm IST",
+      "result": "Punjab Kings Won by 8  Wickets",
+      "teams": [
+        {
+          "name": "Lucknow Super Giants",
+          "score": "171/7",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        },
+        {
+          "name": "Punjab Kings",
+          "score": "177/2",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 12",
+      "venue": "Wankhede Stadium, Mumbai",
+      "time": "MAR, MON 31 , 7:30 pm IST",
+      "result": "Mumbai Indians Won by 8  Wickets",
+      "teams": [
+        {
+          "name": "Mumbai Indians",
+          "score": "121/2",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "116",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 11",
+      "venue": "ACA Stadium, Guwahati",
+      "time": "MAR, SUN 30 , 7:30 pm IST",
+      "result": "Rajasthan Royals Won by 6  Runs",
+      "teams": [
+        {
+          "name": "Rajasthan Royals",
+          "score": "182/9",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Chennai Super Kings",
+          "score": "176/6",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 10",
+      "venue": "Dr YS Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",
+      "time": "MAR, SUN 30 , 3:30 pm IST",
+      "result": "Delhi Capitals Won by 7  Wickets",
+      "teams": [
+        {
+          "name": "Delhi Capitals",
+          "score": "166/3",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        },
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "163",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 9",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "time": "MAR, SAT 29 , 7:30 pm IST",
+      "result": "Gujarat Titans Won by 36  Runs",
+      "teams": [
+        {
+          "name": "Gujarat Titans",
+          "score": "196/8",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        },
+        {
+          "name": "Mumbai Indians",
+          "score": "160/6",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 8",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "time": "MAR, FRI 28 , 7:30 pm IST",
+      "result": "Royal Challengers Bengaluru Won by 50  Runs",
+      "teams": [
+        {
+          "name": "Chennai Super Kings",
+          "score": "146/8",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        },
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "196/7",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 7",
+      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "time": "MAR, THU 27 , 7:30 pm IST",
+      "result": "Lucknow Super Giants Won by 5  Wickets",
+      "teams": [
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "190/9",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Lucknow Super Giants",
+          "score": "193/5",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 6",
+      "venue": "ACA Stadium, Guwahati",
+      "time": "MAR, WED 26 , 7:30 pm IST",
+      "result": "Kolkata Knight Riders Won by 8  Wickets",
+      "teams": [
+        {
+          "name": "Rajasthan Royals",
+          "score": "151/9",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "153/2",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 5",
+      "venue": "Narendra Modi Stadium, Ahmedabad",
+      "time": "MAR, TUE 25 , 7:30 pm IST",
+      "result": "Punjab Kings Won by 11  Runs",
+      "teams": [
+        {
+          "name": "Gujarat Titans",
+          "score": "232/5",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1"
+        },
+        {
+          "name": "Punjab Kings",
+          "score": "243/5",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 4",
+      "venue": "Dr YS Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam",
+      "time": "MAR, MON 24 , 7:30 pm IST",
+      "result": "Delhi Capitals Won by 1  Wicket",
+      "teams": [
+        {
+          "name": "Delhi Capitals",
+          "score": "211/9",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/DC.png"
+        },
+        {
+          "name": "Lucknow Super Giants",
+          "score": "209/8",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/gPLvfvSC1X1711457972LSG.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 3",
+      "venue": "MA Chidambaram Stadium, Chennai",
+      "time": "MAR, SUN 23 , 7:30 pm IST",
+      "result": "Chennai Super Kings Won by 4  Wickets",
+      "teams": [
+        {
+          "name": "Chennai Super Kings",
+          "score": "158/6",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/CSK.png"
+        },
+        {
+          "name": "Mumbai Indians",
+          "score": "155/9",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 2",
+      "venue": "Rajiv Gandhi International Stadium, Hyderabad",
+      "time": "MAR, SUN 23 , 3:30 pm IST",
+      "result": "Sunrisers Hyderabad Won by 44  Runs",
+      "teams": [
+        {
+          "name": "Sunrisers Hyderabad",
+          "score": "286/6",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        },
+        {
+          "name": "Rajasthan Royals",
+          "score": "242/6",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    },
+    {
+      "matchType": "Match 1",
+      "venue": "Eden Gardens, Kolkata",
+      "time": "MAR, SAT 22 , 7:30 pm IST",
+      "result": "Royal Challengers Bengaluru Won by 7  Wickets",
+      "teams": [
+        {
+          "name": "Kolkata Knight Riders",
+          "score": "174/8",
+          "logo": "https://scores.iplt20.com/ipl/teamlogos/KKR.png"
+        },
+        {
+          "name": "Royal Challengers Bengaluru",
+          "score": "177/3",
+          "logo": "https://scores.iplt20.com/ipl/images/default-team-logo.png"
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2025-08-27T12:03:37.640Z",
+  "count": 74
+}

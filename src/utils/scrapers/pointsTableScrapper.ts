@@ -1,4 +1,4 @@
-import { newPage } from "../puppeteerClient.js";
+import { newPage } from "../puppeteerClient";
 
 export async function getPointsTableData() {
   const page = await newPage();
@@ -27,7 +27,7 @@ export async function getPointsTableData() {
     }
 
     // Process rows
-    const tableRows = table.querySelectorAll("tbody tr");
+    const tableRows = table.querySelectorAll("#pointsdata tr");
     let rows = [];
 
     for (let i = 0; i < tableRows.length; i++) {
@@ -40,7 +40,7 @@ export async function getPointsTableData() {
         const td = tdCells[j];
         const spans = td.querySelectorAll("span");
 
-        if (spans.length) {
+        if (spans.length > 1) {
           let spanTexts = [];
           for (let s of spans) {
             spanTexts.push(s.innerText.trim());

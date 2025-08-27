@@ -1,10 +1,40 @@
 import { PointsTableEntry } from "@/types";
 
+async function fetchMatches() {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/points-table`,
+    {
+      cache: "no-store", // always fetch fresh data
+    }
+  );
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch matches");
+  }
+
+  const data = await res.json();
+  return data.data; // array of matches
+}
+
 interface PointsTableProps {
   pointsTable: PointsTableEntry[];
 }
 
-export default function PointsTable({ pointsTable }: PointsTableProps) {
+const fields = [
+  "Pos",
+  "Team",
+  "P",
+  "W",
+  "L",
+  "NR",
+  "NRR",
+  "PTS",
+  "RECENT FORM",
+];
+
+export default async function PointsTable({ pointsTable }: PointsTableProps) {
+  const matches = await fetchMatches();
+  console.log("matches :>> ", matches);
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
       <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
@@ -16,36 +46,17 @@ export default function PointsTable({ pointsTable }: PointsTableProps) {
         <table className="w-full">
           <thead>
             <tr className="bg-gray-50 border-b-2 border-gray-200">
-              <th className="text-left py-3 px-4 font-semibold text-gray-700">
-                Pos
-              </th>
-              <th className="text-left py-3 px-4 font-semibold text-gray-700">
-                Team
-              </th>
-              <th className="text-center py-3 px-4 font-semibold text-gray-700">
-                P
-              </th>
-              <th className="text-center py-3 px-4 font-semibold text-gray-700">
-                W
-              </th>
-              <th className="text-center py-3 px-4 font-semibold text-gray-700">
-                L
-              </th>
-              <th className="text-center py-3 px-4 font-semibold text-gray-700">
-                T
-              </th>
-              <th className="text-center py-3 px-4 font-semibold text-gray-700">
-                Pts
-              </th>
-              <th className="text-center py-3 px-4 font-semibold text-gray-700">
-                NRR
-              </th>
+              {fields.map((field) => (
+                <th className="text-left py-3 px-4 font-semibold text-gray-700">
+                  {field}
+                </th>
+              ))}
             </tr>
           </thead>
           <tbody>
-            {pointsTable.map((entry, index) => (
+            {matches.map((item, index) => (
               <tr
-                key={entry.team.id}
+                key={item.pos}
                 className={`border-b border-gray-100 hover:bg-gray-50 transition-colors ${
                   index < 4 ? "bg-green-50" : ""
                 }`}
@@ -58,48 +69,58 @@ export default function PointsTable({ pointsTable }: PointsTableProps) {
                         : "bg-gray-200 text-gray-700"
                     }`}
                   >
-                    {entry.position}
+                    {item.POS}
                   </span>
                 </td>
                 <td className="py-3 px-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
                       <span className="text-sm font-bold text-gray-600">
-                        {entry.team.shortName.charAt(0)}
+                        {item.TEAM.charAt(0)}
                       </span>
                     </div>
                     <div>
                       <div className="font-semibold text-gray-800">
-                        {entry.team.shortName}
-                      </div>
-                      <div className="text-sm text-gray-500">
-                        {entry.team.name}
+                        {item.TEAM}
                       </div>
                     </div>
                   </div>
                 </td>
                 <td className="py-3 px-4 text-center font-semibold text-gray-700">
-                  {entry.played}
+                  {item.P}
                 </td>
                 <td className="py-3 px-4 text-center font-semibold text-green-600">
-                  {entry.won}
+                  {item.W}
                 </td>
                 <td className="py-3 px-4 text-center font-semibold text-red-600">
-                  {entry.lost}
+                  {item.L}
                 </td>
                 <td className="py-3 px-4 text-center font-semibold text-yellow-600">
-                  {entry.tied}
-                </td>
-                <td className="py-3 px-4 text-center font-bold text-blue-600">
-                  {entry.points}
+                  {item.NR}
                 </td>
                 <td
                   className={`py-3 px-4 text-center font-mono text-sm ${
-                    entry.netRunRate >= 0 ? "text-green-600" : "text-red-600"
+                    item.NRR >= 0 ? "text-green-600" : "text-red-600"
                   }`}
                 >
-                  {entry.netRunRate >= 0 ? "+" : ""}
-                  {entry.netRunRate.toFixed(3)}
+                  {item.NRR >= 0 ? "+" : ""}
+                  {item.NRR}
+                </td>
+                <td className="py-3 px-4 text-center font-bold text-blue-600">
+                  {item.PTS}
+                </td>
+                <td className="py-3 px-4 text-center font-bold text-blue-600">
+                  {item["RECENT FORM"].map((data) => (
+                    <span
+                      className={`px-2 w-8 h-8 bg-gray-200 ${
+                        data.toLowerCase() == "w"
+                          ? "text-green-600"
+                          : "text-red-600"
+                      } rounded-full items-center justify-center `}
+                    >
+                      {data}
+                    </span>
+                  ))}
                 </td>
               </tr>
             ))}

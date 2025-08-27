@@ -1,13 +1,13 @@
 import { NextResponse } from "next/server";
-import { getMatchesData } from "../../utils/fileManager";
+import { getMatchesData } from "../../../utils/fileManager";
 
 // Simple GET endpoint to fetch matches data
 export async function GET() {
   try {
-    // Get matches from our file storage
+    // Get matches from JSON File
     const matches = await getMatchesData();
 
-    // Return success response
+    // success response
     return NextResponse.json({
       success: true,
       data: matches.data,
@@ -16,7 +16,7 @@ export async function GET() {
   } catch (error) {
     console.error("Error reading matches:", error);
 
-    // Handle different types of errors
+    // error handling
     let errorMessage = "Something went wrong";
     if (error instanceof Error) {
       errorMessage = error.message;

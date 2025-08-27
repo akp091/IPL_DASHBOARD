@@ -5,14 +5,9 @@ import { Match, PointsTableEntry } from "../types";
 // Where we store our data files
 const DATA_DIR = path.join(process.cwd(), "data");
 
-// Make sure the data folder exists
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
-}
-
 // Save matches data to a JSON file
 export async function saveMatchesData(data: Match[]) {
-  const filePath = path.join(DATA_DIR, "matches.json");
+  const filePath = path.join(DATA_DIR, "Matches.json");
 
   const fileData = {
     data: data,
@@ -27,7 +22,7 @@ export async function saveMatchesData(data: Match[]) {
 
 // Save points table data to a JSON file
 export async function savePointsTableData(data: PointsTableEntry[]) {
-  const filePath = path.join(DATA_DIR, "pointsTable.json");
+  const filePath = path.join(DATA_DIR, "PointsTable.json");
 
   const fileData = {
     data: data,
@@ -42,12 +37,7 @@ export async function savePointsTableData(data: PointsTableEntry[]) {
 
 // Read matches data from file
 export async function getMatchesData() {
-  const filePath = path.join(DATA_DIR, "matches.json");
-
-  // Check if file exists
-  if (!fs.existsSync(filePath)) {
-    throw new Error("Matches data not found. Please run scraping first.");
-  }
+  const filePath = path.join(DATA_DIR, "Matches.json");
 
   // Read and parse the file
   const fileData = JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -60,7 +50,7 @@ export async function getMatchesData() {
 
 // Read points table data from file
 export async function getPointsTableData() {
-  const filePath = path.join(DATA_DIR, "pointsTable.json");
+  const filePath = path.join(DATA_DIR, "PointsTable.json");
 
   // Check if file exists
   if (!fs.existsSync(filePath)) {

@@ -1,10 +1,10 @@
+import { getPointsTableData } from "@/utils/fileManager";
 import { NextResponse } from "next/server";
-import { getPointsTableData } from "../../utils/fileManager";
 
 // GET endpoint for points table data
 export async function GET() {
   try {
-    // Fetch points table from file
+    
     const pointsTable = await getPointsTableData();
 
     return NextResponse.json({
