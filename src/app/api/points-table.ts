@@ -1,24 +1,33 @@
+import { NextResponse } from "next/server";
 import { getPointsTableData } from "../../utils/fileManager";
 
-export default async function handler(req: any, res: any) {
-  if (req.method !== "GET") {
-    return res.status(405).json({ error: "Method not allowed" });
-  }
-
+// GET endpoint for points table data
+export async function GET() {
   try {
+    // Fetch points table from file
     const pointsTable = await getPointsTableData();
 
-    res.status(200).json({
+    return NextResponse.json({
       success: true,
       data: pointsTable.data,
       lastUpdated: pointsTable.lastUpdated,
     });
-  } catch (err: any) {
-    console.error("Error reading points table:", err);
-    res.status(500).json({
-      success: false,
-      error: "Failed to read points table data",
-      message: err.message,
-    });
+  } catch (error) {
+    console.error("Error reading points table:", error);
+
+    // Simple error handling
+    let errorMessage = "Something went wrong";
+    if (error instanceof Error) {
+      errorMessage = error.message;
+    }
+
+    return NextResponse.json(
+      {
+        success: false,
+        error: "Failed to read points table data",
+        message: errorMessage,
+      },
+      { status: 500 }
+    );
   }
 }

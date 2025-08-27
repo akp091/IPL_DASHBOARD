@@ -13,8 +13,9 @@ export async function getMatchesData() {
 
   console.log("Processing match data...");
 
-  const matches = await page.$$eval("#team_archive li", (items: any) => {
-    let data = [];
+  // Extract data from each match element
+  const matches = await page.$$eval("#team_archive li", (items) => {
+    const data = [];
 
     for (let el of items) {
       const matchType =
@@ -57,7 +58,6 @@ export async function getMatchesData() {
           { name: team1, score: team1Score, logo: team1Logo },
           { name: team2, score: team2Score, logo: team2Logo },
         ],
-        // links: { matchReport, highlights, matchCentre },
       });
     }
 

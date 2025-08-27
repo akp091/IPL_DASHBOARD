@@ -1,24 +1,34 @@
+import { NextResponse } from "next/server";
 import { getMatchesData } from "../../utils/fileManager";
 
-export default async function handler(req: any, res: any) {
-  if (req.method !== "GET") {
-    return res.status(405).json({ error: "Method not allowed" });
-  }
-
+// Simple GET endpoint to fetch matches data
+export async function GET() {
   try {
+    // Get matches from our file storage
     const matches = await getMatchesData();
 
-    res.status(200).json({
+    // Return success response
+    return NextResponse.json({
       success: true,
       data: matches.data,
       lastUpdated: matches.lastUpdated,
     });
-  } catch (err: any) {
-    console.error("Error reading matches:", err);
-    res.status(500).json({
-      success: false,
-      error: "Failed to read matches data",
-      message: err.message,
-    });
+  } catch (error) {
+    console.error("Error reading matches:", error);
+
+    // Handle different types of errors
+    let errorMessage = "Something went wrong";
+    if (error instanceof Error) {
+      errorMessage = error.message;
+    }
+
+    return NextResponse.json(
+      {
+        success: false,
+        error: "Failed to read matches data",
+        message: errorMessage,
+      },
+      { status: 500 }
+    );
   }
 }

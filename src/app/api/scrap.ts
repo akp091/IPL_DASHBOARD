@@ -1,27 +1,35 @@
+import { NextResponse } from "next/server";
 import { scrapeData } from "../../utils/scrappingManager";
 
-export default async function handler(req: any, res: any) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ error: "Method not allowed" });
-  }
-
+// POST endpoint to trigger data scraping
+export async function POST() {
   try {
     console.log("Starting scraping process...");
 
+    // Run the scraping
     const result = await scrapeData();
 
-    res.status(200).json({
+    return NextResponse.json({
       success: true,
       message: "Scraping completed successfully",
       data: result,
     });
-  } catch (err: any) {
-    console.error("Scraping failed:", err);
+  } catch (error) {
+    console.error("Scraping failed:", error);
 
-    res.status(500).json({
-      success: false,
-      error: "Scraping failed",
-      message: err.message,
-    });
+    // Basic error handling
+    let errorMessage = "Scraping failed";
+    if (error instanceof Error) {
+      errorMessage = error.message;
+    }
+
+    return NextResponse.json(
+      {
+        success: false,
+        error: "Scraping failed",
+        message: errorMessage,
+      },
+      { status: 500 }
+    );
   }
 }
