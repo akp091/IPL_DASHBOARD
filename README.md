@@ -111,7 +111,6 @@ ipl-dashboard/
 
 ### Contact Information
 
-- **Developer**: [Your name/team]
-- **Email**: [Your email]
-- **Repository**: [GitHub/GitLab link]
-- **Issues**: [Issue tracker link]
+- **Developer**: Ankit Kumar Pandey
+- **Email**: ankitpnitj@gmail.com
+- **Repository**: https://github.com/akp091
