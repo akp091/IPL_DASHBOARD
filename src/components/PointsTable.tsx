@@ -38,7 +38,6 @@ export default async function PointsTable() {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
       <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-        <span className="mr-3">🏆</span>
         Points Table
       </h2>
 
@@ -119,6 +118,8 @@ export default async function PointsTable() {
                       className={`px-2 w-8 h-8 bg-gray-200 ${
                         data.toLowerCase() == "w"
                           ? "text-green-600"
+                          : data.toLowerCase() == "n"
+                          ? "text-yellow-600"
                           : "text-red-600"
                       } rounded-full items-center justify-center `}
                     >

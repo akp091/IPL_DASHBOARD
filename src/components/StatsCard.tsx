@@ -27,9 +27,7 @@ export default function StatsCard({
           <p className="text-3xl font-bold text-gray-900">{value}</p>
           {subtitle && <p className="text-sm text-gray-500 mt-1">{subtitle}</p>}
         </div>
-        <div
-          className={`w-12 h-12 rounded-full flex items-center justify-center ${colorClasses[color]}`}
-        ></div>
+
       </div>
     </div>
   );
