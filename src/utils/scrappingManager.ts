@@ -2,15 +2,28 @@ import { getMatchesData } from "./scrapers/matchScrapper";
 import { getPointsTableData } from "./scrapers/pointsTableScrapper";
 import { saveMatchesData, savePointsTableData } from "./fileManager";
 import { closeBrowser } from "./puppeteerClient";
+import { config } from "./config";
 
 export async function scrapeData() {
   try {
     console.log("Starting data scraping...");
 
-    const [matches, pointsTable] = await Promise.all([
+    const timeoutPromise = new Promise((_, reject) => {
+      setTimeout(
+        () => reject(new Error("Scraping timeout")),
+        config.scraping.timeoutMs
+      );
+    });
+
+    const scrapingPromise = Promise.all([
       getMatchesData(),
       getPointsTableData(),
     ]);
+
+    const [matches, pointsTable] = (await Promise.race([
+      scrapingPromise,
+      timeoutPromise,
+    ])) as [any[], any[]];
 
     console.log(
       `Scraped ${matches.length} matches and ${pointsTable.length} teams`

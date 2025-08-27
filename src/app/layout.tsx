@@ -1,10 +1,16 @@
 import "./globals.css";
+import { useEffect } from "react";
 
-// Start scheduler on server
+// Start scheduler on server only once
 if (typeof window === "undefined") {
-  import("../utils/scheduler").then(({ startScheduler }) => {
-    startScheduler();
-  });
+  let schedulerStarted = false;
+
+  if (!schedulerStarted) {
+    import("../utils/scheduler").then(({ startScheduler }) => {
+      startScheduler();
+      schedulerStarted = true;
+    });
+  }
 }
 
 export default function RootLayout({

@@ -27,7 +27,6 @@ export default async function MatchSchedule() {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
       <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-        <span className="mr-3">📅</span>
         Match Schedule
       </h2>
 
