@@ -1,103 +1,338 @@
-import Image from "next/image";
+import Header from "@/components/Header";
+import LiveMatch from "@/components/LiveMatch";
+import UpcomingMatches from "@/components/UpcomingMatches";
+import PointsTable from "@/components/PointsTable";
+import MatchSchedule from "@/components/MatchSchedule";
+import StatsCard from "@/components/StatsCard";
+
+// Static data for the design template
+const staticData = {
+  totalMatches: 74,
+  completedMatches: 45,
+  upcomingMatchesCount: 28,
+  liveMatchesCount: 1,
+  lastUpdated: "2024-08-25T18:42:16.576Z",
+
+  liveMatch: {
+    id: "match_1",
+    team1: { id: "csk", name: "Chennai Super Kings", shortName: "CSK" },
+    team2: { id: "mi", name: "Mumbai Indians", shortName: "MI" },
+    date: "Aug 25",
+    time: "7:30 PM",
+    venue: "Wankhede Stadium, Mumbai",
+    status: "live" as const,
+    isLive: true,
+    score1: "156/4",
+    score2: "142/8",
+  },
+
+  upcomingMatches: [
+    {
+      id: "match_2",
+      team1: {
+        id: "rcb",
+        name: "Royal Challengers Bangalore",
+        shortName: "RCB",
+      },
+      team2: { id: "kkr", name: "Kolkata Knight Riders", shortName: "KKR" },
+      date: "Aug 26",
+      time: "7:30 PM",
+      venue: "Chinnaswamy Stadium, Bangalore",
+      status: "upcoming" as const,
+    },
+    {
+      id: "match_3",
+      team1: { id: "dc", name: "Delhi Capitals", shortName: "DC" },
+      team2: { id: "pbks", name: "Punjab Kings", shortName: "PBKS" },
+      date: "Aug 27",
+      time: "7:30 PM",
+      venue: "Arun Jaitley Stadium, Delhi",
+      status: "upcoming" as const,
+    },
+    {
+      id: "match_4",
+      team1: { id: "rr", name: "Rajasthan Royals", shortName: "RR" },
+      team2: { id: "srh", name: "Sunrisers Hyderabad", shortName: "SRH" },
+      date: "Aug 28",
+      time: "7:30 PM",
+      venue: "Sawai Mansingh Stadium, Jaipur",
+      status: "upcoming" as const,
+    },
+  ],
+
+  pointsTable: [
+    {
+      team: { id: "csk", name: "Chennai Super Kings", shortName: "CSK" },
+      played: 14,
+      won: 11,
+      lost: 3,
+      tied: 0,
+      points: 22,
+      netRunRate: 0.652,
+      position: 1,
+    },
+    {
+      team: { id: "mi", name: "Mumbai Indians", shortName: "MI" },
+      played: 14,
+      won: 10,
+      lost: 4,
+      tied: 0,
+      points: 20,
+      netRunRate: 0.523,
+      position: 2,
+    },
+    {
+      team: {
+        id: "rcb",
+        name: "Royal Challengers Bangalore",
+        shortName: "RCB",
+      },
+      played: 14,
+      won: 9,
+      lost: 5,
+      tied: 0,
+      points: 18,
+      netRunRate: 0.387,
+      position: 3,
+    },
+    {
+      team: { id: "kkr", name: "Kolkata Knight Riders", shortName: "KKR" },
+      played: 14,
+      won: 8,
+      lost: 6,
+      tied: 0,
+      points: 16,
+      netRunRate: 0.234,
+      position: 4,
+    },
+    {
+      team: { id: "dc", name: "Delhi Capitals", shortName: "DC" },
+      played: 14,
+      won: 7,
+      lost: 7,
+      tied: 0,
+      points: 14,
+      netRunRate: -0.123,
+      position: 5,
+    },
+    {
+      team: { id: "pbks", name: "Punjab Kings", shortName: "PBKS" },
+      played: 14,
+      won: 6,
+      lost: 8,
+      tied: 0,
+      points: 12,
+      netRunRate: -0.234,
+      position: 6,
+    },
+    {
+      team: { id: "rr", name: "Rajasthan Royals", shortName: "RR" },
+      played: 14,
+      won: 5,
+      lost: 9,
+      tied: 0,
+      points: 10,
+      netRunRate: -0.345,
+      position: 7,
+    },
+    {
+      team: { id: "srh", name: "Sunrisers Hyderabad", shortName: "SRH" },
+      played: 14,
+      won: 4,
+      lost: 10,
+      tied: 0,
+      points: 8,
+      netRunRate: -0.456,
+      position: 8,
+    },
+    {
+      team: { id: "gt", name: "Gujarat Titans", shortName: "GT" },
+      played: 14,
+      won: 3,
+      lost: 11,
+      tied: 0,
+      points: 6,
+      netRunRate: -0.567,
+      position: 9,
+    },
+    {
+      team: { id: "lsg", name: "Lucknow Super Giants", shortName: "LSG" },
+      played: 14,
+      won: 2,
+      lost: 12,
+      tied: 0,
+      points: 4,
+      netRunRate: -0.678,
+      position: 10,
+    },
+  ],
+
+  schedule: [
+    {
+      id: "match_1",
+      team1: { id: "csk", name: "Chennai Super Kings", shortName: "CSK" },
+      team2: { id: "mi", name: "Mumbai Indians", shortName: "MI" },
+      date: "Aug 25",
+      time: "7:30 PM",
+      venue: "Wankhede Stadium, Mumbai",
+      status: "live" as const,
+      isLive: true,
+      score1: "156/4",
+      score2: "142/8",
+      result: "CSK won by 14 runs",
+    },
+    {
+      id: "match_2",
+      team1: {
+        id: "rcb",
+        name: "Royal Challengers Bangalore",
+        shortName: "RCB",
+      },
+      team2: { id: "kkr", name: "Kolkata Knight Riders", shortName: "KKR" },
+      date: "Aug 26",
+      time: "7:30 PM",
+      venue: "Chinnaswamy Stadium, Bangalore",
+      status: "upcoming" as const,
+    },
+    {
+      id: "match_3",
+      team1: { id: "dc", name: "Delhi Capitals", shortName: "DC" },
+      team2: { id: "pbks", name: "Punjab Kings", shortName: "PBKS" },
+      date: "Aug 27",
+      time: "7:30 PM",
+      venue: "Arun Jaitley Stadium, Delhi",
+      status: "upcoming" as const,
+    },
+    {
+      id: "match_4",
+      team1: { id: "rr", name: "Rajasthan Royals", shortName: "RR" },
+      team2: { id: "srh", name: "Sunrisers Hyderabad", shortName: "SRH" },
+      date: "Aug 28",
+      time: "7:30 PM",
+      venue: "Sawai Mansingh Stadium, Jaipur",
+      status: "upcoming" as const,
+    },
+    {
+      id: "match_5",
+      team1: { id: "gt", name: "Gujarat Titans", shortName: "GT" },
+      team2: { id: "lsg", name: "Lucknow Super Giants", shortName: "LSG" },
+      date: "Aug 29",
+      time: "7:30 PM",
+      venue: "Narendra Modi Stadium, Ahmedabad",
+      status: "upcoming" as const,
+    },
+    {
+      id: "match_6",
+      team1: { id: "csk", name: "Chennai Super Kings", shortName: "CSK" },
+      team2: {
+        id: "rcb",
+        name: "Royal Challengers Bangalore",
+        shortName: "RCB",
+      },
+      date: "Aug 24",
+      time: "7:30 PM",
+      venue: "MA Chidambaram Stadium, Chennai",
+      status: "completed" as const,
+      result: "CSK won by 6 wickets",
+      score1: "173/6",
+      score2: "172/8",
+    },
+    {
+      id: "match_7",
+      team1: { id: "mi", name: "Mumbai Indians", shortName: "MI" },
+      team2: { id: "dc", name: "Delhi Capitals", shortName: "DC" },
+      date: "Aug 23",
+      time: "7:30 PM",
+      venue: "Wankhede Stadium, Mumbai",
+      status: "completed" as const,
+      result: "MI won by 8 wickets",
+      score1: "165/2",
+      score2: "164/8",
+    },
+  ],
+};
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-gray-50">
+      <Header />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <div className="container mx-auto px-4 py-8">
+        {/* Header Section */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
+          <div className="mb-4 sm:mb-0">
+            <h1 className="text-2xl font-bold text-gray-800">
+              Dashboard Overview
+            </h1>
+            <p className="text-sm text-gray-600 mt-1">
+              Last updated: {new Date(staticData.lastUpdated).toLocaleString()}
+            </p>
+          </div>
+          <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors flex items-center space-x-2">
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+              />
+            </svg>
+            <span>Refresh</span>
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+
+        {/* Statistics Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <StatsCard
+            title="Total Matches"
+            value={staticData.totalMatches}
+            icon="🏏"
+            color="blue"
+            subtitle="Season 2024"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <StatsCard
+            title="Completed"
+            value={staticData.completedMatches}
+            icon="✅"
+            color="green"
+            subtitle="Finished matches"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <StatsCard
+            title="Upcoming"
+            value={staticData.upcomingMatchesCount}
+            icon="⏰"
+            color="yellow"
+            subtitle="Scheduled matches"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <StatsCard
+            title="Live Now"
+            value={staticData.liveMatchesCount}
+            icon="🔴"
+            color="red"
+            subtitle="Currently playing"
+          />
+        </div>
+
+        {/* Live Match / Upcoming Match */}
+        <LiveMatch
+          liveMatch={staticData.liveMatch}
+          upcomingMatches={staticData.upcomingMatches}
+        />
+
+        {/* Upcoming Matches */}
+        <UpcomingMatches upcomingMatches={staticData.upcomingMatches} />
+
+        {/* Points Table */}
+        <PointsTable pointsTable={staticData.pointsTable} />
+
+        {/* Match Schedule */}
+        <MatchSchedule schedule={staticData.schedule} />
+      </div>
     </div>
   );
 }
