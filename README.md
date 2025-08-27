@@ -109,9 +109,6 @@ ipl-dashboard/
 5. **Open your browser**
    - Navigate to `http://localhost:5000`
 
-
-
-
 ### Contact Information
 
 - **Developer**: [Your name/team]

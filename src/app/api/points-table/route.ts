@@ -1,7 +1,7 @@
 import { getPointsTableData } from "@/utils/fileManager";
 import { NextResponse } from "next/server";
 
-// GET endpoint for points table data
+// endpoint for getting points table data
 export async function GET() {
   try {
     
@@ -15,7 +15,7 @@ export async function GET() {
   } catch (error) {
     console.error("Error reading points table:", error);
 
-    // Simple error handling
+    //  error handling
     let errorMessage = "Something went wrong";
     if (error instanceof Error) {
       errorMessage = error.message;

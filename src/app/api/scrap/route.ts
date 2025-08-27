@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { scrapeData } from "../../utils/scrappingManager";
+import { scrapeData } from "../../../utils/scrappingManager";
 
-// POST endpoint to trigger data scraping
+// endpoint to trigger data scraping, this is not used in UI, but if needed we can run this on click of refresh button from the client component.
 export async function POST() {
   try {
     console.log("Starting scraping process...");
@@ -17,7 +17,7 @@ export async function POST() {
   } catch (error) {
     console.error("Scraping failed:", error);
 
-    // Basic error handling
+    //  error handling
     let errorMessage = "Scraping failed";
     if (error instanceof Error) {
       errorMessage = error.message;

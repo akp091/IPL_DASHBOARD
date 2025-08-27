@@ -2,14 +2,14 @@ import { NextRequest, NextResponse } from "next/server";
 import { getMatchesData } from "../../../utils/fileManager";
 import { compareDateTime } from "@/utils/commonUtils";
 
-// get method to fetch matches data
+// get method to fetch match schedule (all matches including upcoming, completed and live matches)
 export async function GET(req: NextRequest) {
   const searchParams = req?.nextUrl?.searchParams;
   const status = searchParams?.get("status");
 
   console.log("req.body==>>>>", status);
   try {
-    // Get matches from JSON File
+    // get all matches from JSON File
     const matches = await getMatchesData();
 
     // success response
